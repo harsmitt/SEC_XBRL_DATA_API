@@ -4,7 +4,9 @@ import pandas as pd
 import os
 from sqlalchemy import create_engine
 
-#enter relevant credentials as per your DB
+#enter relevant credentials as per your DB. For Example if your MYSQL server has username=abc and password=xyz and
+# hosted on 100.1.1.1 on port 5000 then the syntax will be engine = create_engine("mysql+pymysql://abc:xyz@10.1.1.1:5000/sec_xbrl")
+
 engine = create_engine("mysql+pymysql://harshit:harshit@localhost/sec_xbrl")
 
 for k in os.scandir():
