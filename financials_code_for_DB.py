@@ -13,14 +13,12 @@ from aiomysql.sa import create_engine as async_engine
 from aiomysql import create_pool
 
 
-config = {'user': 'harshit', 'password': 'harshit', 'host': '103.98.21.4', 'port':8082, 'db':'sec_xbrl'}
-engine = create_engine("mysql+pymysql://harshit:harshit@103.98.21.4:8082/sec_xbrl")
+config = {'user': 'harshit', 'password': 'harshit', 'host': 'localhost', 'port':8082, 'db':'sec_xbrl'}
+engine = create_engine("mysql+pymysql://harshit:harshit@localhost:8082/sec_xbrl")
 
 # MySQL database configuration
-MYSQL_HOST = '103.98.21.4'
+MYSQL_HOST = 'localhost'
 MYSQL_PORT = 8082
-# MYSQL_HOST = '10.10.0.141'
-# MYSQL_PORT = 3306
 MYSQL_USER = 'harshit'
 MYSQL_PASSWORD = 'harshit'
 MYSQL_DB = 'sec_xbrl'
