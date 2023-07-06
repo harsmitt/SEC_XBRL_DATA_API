@@ -1,0 +1,1 @@
+# SEC_XBRL_DATA_API
