@@ -14,7 +14,7 @@ Steps:
 1. First create a MYSQL server and then using the sec_xbrl.sql file import it into the server. This will create necessary tables.
 2. Extract the files from zip file one by one into a folder and in that folder run the script upload_data.py to upload the data from file to MYSQL table.
 3. After the data is uploaded, run commmand "uvicorn app:app" this will start a localhost server which will fetch data by running queries on the DB tables.
-4. There are mainly 4 URLS which can be used to check the data:
+4. There are mainly 3 URLS which can be used to check the data:
 
 EX: localhost:8000/filing/{adsh}    ---    localhost:8000/filing/0000320193-22-000108   ----   this will give you filing info.
 EX: localhost:8000/financials/{adsh}    ---    localhost:8000/financials/0000320193-22-000108   ----   this will give financials for latest year from the filing
