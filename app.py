@@ -13,7 +13,7 @@ pd.set_option('display.float_format', '{:,.2f}'.format)
 from financials_code_for_DB import *
 
 # MySQL database configuration
-MYSQL_HOST = '103.98.21.4'
+MYSQL_HOST = 'localhost'
 MYSQL_PORT = 8082
 MYSQL_USER = 'harshit'
 MYSQL_PASSWORD = 'harshit'
